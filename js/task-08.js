@@ -12,6 +12,7 @@ function loginFormSubmitHandler(e) {
 
   if (email.value === "" || password.value === "") {
     alert("You must fill all the fields!");
+    return;
   }
 
   const userInputData = [...labelsEl].reduce((accum, label, i) => {
